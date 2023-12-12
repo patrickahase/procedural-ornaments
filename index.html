@@ -6,9 +6,35 @@
   <title>TestBox</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="infoStore.js"></script>
   <script src="initScript.js" defer></script>
 </head>
 <body>
-  
+  <!-- debug menu - ! hide -->
+  <!-- change between rem and px -->
+  <header>
+    <section class="controlSection">
+      <div class="controlContainer">
+        <label for="widthControl">Container Width</label>
+        <input type="number" id="widthControl" min="1" step="1" />
+      </div>
+      
+      <div class="controlContainer">
+        <label for="heightControl">Container Height</label>
+        <input type="number" id="heightControl" min="1" step="1" />
+      </div>
+    </section>
+  </header>
+  <main>
+
+  </main>
+  <!-- container for svg -->
+    <div class="ornamentContainer">
+    <!-- resizing handles -->
+    <!-- <div class="resizer" class="resizer-l"></div>
+    <div class="resizer" class="resizer-r"></div>
+    <div class="resizer" class="resizer-t"></div>
+    <div class="resizer" class="resizer-b"></div> -->
+    </div>
 </body>
 </html>

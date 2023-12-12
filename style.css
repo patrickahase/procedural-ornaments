@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ornamentContainer{
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  border: 4px solid blue;
+}
+
+/* debug */
+
+header {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.controlSection{
+  display: flex;
+  background-color: beige;
+}
+.controlContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+/* resizer handles */
+.resizer{
+ position: absolute;
+ background-color: aqua;
+ border: 1px solid magenta;
+ opacity: 0.3;
+}
+.resizer:active{
+  background-color: black;
+}
+.resizer-t{
+  cursor: row-resize;
+  width: calc(100% - 2rem);
+  height: 2rem;
+  left: 1rem;
+  bottom: calc(100% - 1rem);
+}
+.resizer-tr{
+  cursor: nesw-resize;
+  width: 2rem;
+  height: 2rem;
+  left: calc(100% - 1rem);
+  bottom: calc(100% - 1rem);
+}
+.resizer-r{
+  cursor: col-resize;
+  width: 2rem;
+  height: calc(100% - 2rem);
+  left: calc(100% - 1rem);
+  top: 1rem;
+}
+.resizer-br{
+  cursor: nwse-resize;
+  width: 2rem;
+  height: 2rem;
+  left: calc(100% - 1rem);
+  top: calc(100% - 1rem);
+}
+.resizer-b{
+  cursor: row-resize;
+  width: calc(100% - 2rem);
+  height: 2rem;
+  left: 1rem;
+  top: calc(100% - 1rem);
+}
+.resizer-bl{
+  cursor: nesw-resize;
+  width: 2rem;
+  height: 2rem;
+  right: calc(100% - 1rem);
+  top: calc(100% - 1rem);
+}
+.resizer-l{
+  cursor: col-resize;
+  width: 2rem;
+  height: calc(100% - 2rem);
+  right: calc(100% - 1rem);
+  top: 1rem;
+}
+.resizer-tl{
+  cursor: nwse-resize;
+  width: 2rem;
+  height: 2rem;
+  right: calc(100% - 1rem);
+  bottom: calc(100% - 1rem);
+}
